@@ -17,7 +17,7 @@
     if(self = [super initWithToken:token baseURL:baseURL])
     {
         [self setValue:[[BCSDKMediaService alloc]
-                        initWithEventEmitter:emitter token:token baseURL:baseURL] forKey:@"mediaService"];
+                        initWithEventEmitter:super.emitter token:token baseURL:baseURL] forKey:@"mediaService"];
     }
     return self;
 }
